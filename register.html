@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Data-->
+    <meta charset="UTF-8">
+    <title>Bolipad - Registro</title>
+    <meta name="description" content="Bolipad, bolis en San Juan" />
+    <meta name="author" content="Alan Samuel Aguirre Salazar" />
+    <meta name="keywords" content="Bolipad, Bolis, San Juan de los Lagos, Helado" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile viewing file-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Site title and Favicon-->
+    <link rel="icon" type="image/png" href="./assets/favicon.ico" size="96 * 96" />
+    
+    <link rel="stylesheet" href="./assets/registerStyle.css">
+    <link rel="stylesheet" href="./assets/navbarStyle.css">
+    <link rel="stylesheet" href="./assets/footerStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Register -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    
+    
+
+</head>
+<body style="background: -webkit-linear-gradient(90deg,#000000, #682a09, #ff9900)">
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark navbar-expand-md bg-black sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">Bolipad</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="./products.html">Catálogo</a></li>
+                </ul>
+                <!-- Search -->
+                <form class="form-inline mr-auto" target="_self">
+                    <div class="form-group">
+                        <label for="search-field">
+                            <i class="fa fa-search"></i>
+                        </label>
+                        <input class="form-control search-field" type="search" name="search" id="search-field">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Register -->
+    <div class="container register">
+        <div class="row">
+            <div class="col-md-3 register-left">
+                <img src="./assets/images/1.png" alt="" style="width: 10rem"/>
+                <h4>Bienvenido</h4>
+                <p>¡Una refrescante experiencia te está esperando!</p>
+                <a href="./login.html"><input type="submit" name="" style="width:8rem" value="Iniciar Sesión"/><br/></a>
+            </div>
+            <div class="col-md-9 register-right">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <h3 class="register-heading">Crear una cuenta</h3>
+                        <div class="row register-form">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Nombre *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Apellido/s *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Contraseña *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control"  placeholder="Confirmar Contraseña *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <div class="maxl">
+                                        <label class="radio inline"> 
+                                            <input type="radio" name="gender" value="male" checked>
+                                            <span> Hombre </span> 
+                                        </label>
+                                        <label class="radio inline"> 
+                                            <input type="radio" name="gender" value="female">
+                                            <span>Mujer </span> 
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Teléfono (opcional) *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option class="hidden"  selected disabled>Seleccione una pregunta de seguridad</option>
+                                        <option>¿Cuál es el nombre de tu mascota?</option>
+                                        <option>¿Cuál es el nombre de tu mejor amigo de la infancia?</option>
+                                        <option>¿Cuándo es tu cumpleaños?</option>
+                                        <option>¿Cuál es tu comida favorita?</option>
+                                        <option>¿Cuál es tu postre favorito?</option>
+                                        <option>¿Cuál ha sido la contraseña que más recuerdas?</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Ingrese su respuesta *" value="" />
+                                </div>
+                                <a href="./index.html"><input type="submit" class="btnRegister" value="Registrarse"/></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    
+</body>
+
+<div class="container-fluid pb-0 mb-0 justify-content-center text-light ">
+    <footer>
+        <div class="row my-5 justify-content-center py-5">
+            <div class="col-11">
+                <div class="row ">
+                    <div class="col-xl-8 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
+                        <h3 class="text-muted mb-md-0 mb-5 bold-text">Bolipad.</h3>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                        <h6 class="mb-3 mb-lg-4 bold-text "><b>MENU</b></h6>
+                        <ul class="list-unstyled">
+                            <li><a style="cursor:default;text-decoration:none;color:white" href="./index.html">Home</a></li>
+                            <li><a style="cursor:default;text-decoration:none;color:white" href="./products.html">Católogo</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                        <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>DIRECCIONES</b></h6>
+                        <p class="mb-1">• Benjamín R. de León 110 Colonia La Martinica</p>
+                        <p class="mb-1">• Aztecas 108 Colonia El Rosario</p>
+                        <p class="mb-1">• Prolongación Benigno Romo 146b Colonia La Martinica </p>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
+                        <p class="social text-muted mb-0 pb-0 bold-text"> 
+                            <span class="mx-4">
+                                <a href="https://www.facebook.com/pages/category/Product-Service/Bolipad-115075880293762/" style="cursor:default;text-decoration:none;color:gray"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            </span>
+                            <span class="mx-5">
+                                <a href="https://instagram.com/boli.pad" style="cursor:default;text-decoration:none;color:gray"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </span> 
+                        </p>
+                        <small class="rights"><span>&#174;</span> Bolipad All Rights Reserved.</small>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-1 align-self-end ">
+                        <h6 class="mt-55 mt-2 text-muted bold-text"><b>WHATSAPP</b></h6><small> <span><i class="fa fa-whatsapp" aria-hidden="true"></i></span> +52 3951292533</small>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-2 align-self-end mt-3 ">
+                        <h6 class="text-muted bold-text"><b>CIUDAD</b></h6><small><span><i class="fa fa-location-arrow" aria-hidden="true"></i></span> San Juan de los Lagos, Jal.</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+</html>

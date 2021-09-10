@@ -1,0 +1,58 @@
+/* Ubicacion */
+.row.justify-content-xl-center{
+    margin:0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content:center;
+    justify-content: center;
+    text-align: center;
+}
+
+#containerWhere{
+    border-radius: 10px;
+
+    width:90%;
+    box-shadow: 1px 9px 22px 0px rgba(0,0,0,0.75);
+    margin:0px 10x;
+    margin-bottom:80px;
+}
+
+#cardContainerWhere{
+    width:auto;
+    text-align: center;
+    margin: 2rem 6rem;
+}
+
+#cardContainerWhere h1{
+    width: 100%;
+    font-size: 3rem;
+}
+
+#cardContainerWhere img{
+    width:15rem;
+}
+
+.map-container-5{
+    overflow:hidden;
+    /* padding-bottom:56.25%; */
+    height:30rem;
+    width:60vw;
+    /* position:relative; */
+    box-shadow: 1px 9px 22px 0px rgba(0,0,0,0.75);
+}
+.map-container-5 iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.vertical {
+    border-left: 2px solid rgb(0, 0, 0);
+    box-shadow: 1px 9px 22px 0px rgba(0,0,0,0.75);
+    height: 30rem;
+    position:absolute;
+    left: 50%;
+}
